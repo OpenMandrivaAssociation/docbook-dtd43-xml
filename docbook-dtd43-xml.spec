@@ -5,7 +5,7 @@
 Summary:	XML document type definition for DocBook %{dtdver}
 Name:		docbook-dtd43-xml
 Version:	1.0
-Release:	20
+Release:	21
 Group:		Publishing
 License:	Artistic style
 Url:		http://www.oasis-open.org/docbook/
@@ -45,8 +45,6 @@ touch %{buildroot}%{_sysconfdir}/sgml/%{mltyp}-docbook-%{dtdver}.cat
 %doc README ChangeLog
 %{sgmlbase}/docbook/%{mltyp}-dtd-%{dtdver}
 %ghost %config(noreplace) %{_sysconfdir}/sgml/%{mltyp}-docbook-%{dtdver}.cat
-# why this?
-# %ghost %config(noreplace) %{_sysconfdir}/sgml/catalog
 
 %post
 ##
